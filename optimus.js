@@ -4,6 +4,8 @@ const request=require('request');
 
 // called when index route is hit
 module.exports.index = (event, context, callback) => {
+
+// to test the get call in nodejs
 request.get('https://www-dev.uat-thesun.co.uk/wp-json/wp/v2/posts',null,function(err,res,body){
     if(err) //TODO: handle err
     if(res.statusCode !== 200 ) //etc
