@@ -68,7 +68,7 @@ functions:
   test:
     handler: optimus.test
     events:
-      - http: GET test
+      - http: GET test/{name}
    
 
 #    The following are a few example events you can configure
